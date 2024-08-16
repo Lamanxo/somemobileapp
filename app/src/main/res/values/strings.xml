@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Some app</string>
+    <string name="sales_icon">salesIcon</string>
+    <string name="contacts_text">Контакты</string>
+    <string name="about_us_text">О нас</string>
+    <string name="main_text">Главная</string>
+    <string name="courses_text">Courses</string>
+    <string name="App_text">App</string>
+    <string name="menu_icon">menuIcon</string>
+
+
+</resources>
