@@ -7,6 +7,10 @@
     <string name="courses_text">Courses</string>
     <string name="App_text">App</string>
     <string name="menu_icon">menuIcon</string>
+    <string name="course_start_date">Старт обучения</string>
+    <string name="course_level">Уровень</string>
+
+
 
 
 </resources>
