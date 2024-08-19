@@ -1,6 +1,7 @@
 package com.example.someapp.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.someapp.CoursePage;
 import com.example.someapp.R;
 import com.example.someapp.models.Course;
 
@@ -44,6 +46,22 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.CourseView
         holder.courseTitle.setText(courses.get(position).getTitle());
         holder.courseDate.setText(courses.get(position).getDate());
         holder.courseLevel.setText(courses.get(position).getLevel());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, CoursePage.class);
+                intent.putExtra("courseBg", Color.parseColor(courses.get(position).getColor()));
+                intent.putExtra("courseImage", imageId);
+                intent.putExtra("courseTitle", courses.get(position).getTitle());
+                intent.putExtra("courseDate", courses.get(position).getDate());
+                intent.putExtra("courseLevel", courses.get(position).getLevel());
+                intent.putExtra("courseText", courses.get(position).getText());
+
+
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override

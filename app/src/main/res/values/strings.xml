@@ -9,7 +9,9 @@
     <string name="menu_icon">menuIcon</string>
     <string name="course_start_date">Старт обучения</string>
     <string name="course_level">Уровень</string>
-
+    <string name="course_page_desc">За программу вы изучите построение графических приложений под ПК,
+        разработку веб сайтов на основе JAVA, SpringBoot, изучите построение Андроид приложений и отлично
+    изучите сам синтаксис Джава</string>
 
 
 

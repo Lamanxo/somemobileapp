@@ -7,14 +7,16 @@ public class Course {
     private String date;
     private String level;
     private String color;
+    private String text;
 
-    public Course(int id, String img, String title, String date, String level, String color) {
+    public Course(int id, String img, String title, String date, String level, String color, String text) {
         this.id = id;
         this.img = img;
         this.title = title;
         this.date = date;
         this.level = level;
         this.color = color;
+        this.text = text;
     }
 
     public int getId() {
@@ -63,5 +65,13 @@ public class Course {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 }
